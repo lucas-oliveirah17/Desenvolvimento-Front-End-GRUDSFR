@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos/css.css" />
+    <link rel="icon" href="imagens/tecnologia.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+       <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#vit">Vitrine</a></li>
+        <li><a href="#ped">Pedidos</a></li>
+        <li><a href="#con">Contato</a></li>
+       </ul>
+
+       <h1>Tecnologias</h1>
+    </header>
+
+    <main>
+        <h2>Soluções</h2>
+
+        <div class="container">
+            <img src="imagens/solucao1.png" alt="Microship" class="solucoes">
+            <img src="imagens/solucao2.png" alt="Drone" class="solucoes">
+            <img src="imagens/solucao3.png" alt="Carro Inteligente" class="solucoes">
+            <img src="imagens/solucao4.png" alt="NFC" class="solucoes">
+            <img src="imagens/solucao5.png" alt="Computação em Nuvem" class="solucoes">
+            <img src="imagens/solucao6.png" alt="Relógio" class="solucoes">
+            <img src="imagens/solucao7.png" alt="Smartphone" class="solucoes">
+            <img src="imagens/solucao8.png" alt="Satélite" class="solucoes">
+        </div>
+
+        <h2 id="vit">Vitrine de Produtos</h2>
+
+        <div class="container">
+            <div class="item_vitrine">
+                <img src="imagens/vitrine1.jpg" alt="Smartphone">
+                <h3>Smartphone</h3>
+                <h4>20% desconto</h4>
+                <p>Velocidade e Desempenho</p>
+            </div>
+
+            <div class="item_vitrine">
+                <img src="imagens/vitrine2.jpg" alt="Relógio">
+                <h3>Relógio</h3>
+                <h4>10% desconto</h4>
+                <p>Inteligente Fitness</p>
+            </div>
+
+            <div class="item_vitrine">
+                <img src="imagens/vitrine3.jpg" alt="Drone">
+                <h3>Drone</h3>
+                <h4>15% desconto</h4>
+                <p>Profissional HD</p>
+            </div>
+        </div>
+
+            <h2 id="ped">Pedidos</h2>
+
+            <form action="" method="get">
+                <label for="prod">Produto</label>
+                <select name="prod" id="prod" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="smart">Smartphone</option>
+                    <option value="relog">Relógio</option>
+                    <option value="drone">Drone</option>
+                </select>
+
+                <label for="qtd">Quantidade</label>
+                <input type="number" name="qtd" id="qtd" min="1" max="20" required>
+                <input type="submit" value="Solicitar" class="botao">
+            </form>
+
+            <h2 id="con">Contato</h2>
+
+            <form action="" method="get">
+                <p>Deixe seus dados e entraremos em contato:</p>
+                <input type="text" name="nome" id="nome" maxlength="38" required placeholder="Nome">
+                <input type="email" name="email" id="email" maxlength="38" required placeholder="E=mail">
+                <input type="text" name="fone" id="fone" maxlength="17" required placeholder="Telefone">
+                <input type="submit" value="Enviar" class="botao">
+            </form>
+    </main>
+    
+</body>
+</html>

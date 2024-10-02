@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/css.css" />
+    <script src="scripts/jscript.js" defer></script> 
+    <title>World of Warcraft®: The War Within™</title>
+    <link rel="icon" href="imagens/icon_website.svg"/>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#top"><img src="imagens/icon_website.svg" alt="Icon World of Warcraft The War Within™"></a>
+
+            <ul>
+                <li><a href="#logo_WSS">Visão Geral</a></li>
+                <li><a href="#story">História</a></li>
+                <li><a href="#world">Mundo</a></li>
+                <li><a href="#features">Destaques</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <main>        
+        <div class="container home" id="top">
+            <img id="background_mobile" src="imagens/home_art_mobile.avif" alt="Art Mobile">
+            <video id="background_desktop" src="imagens/home_art_desktop_video.mp4" poster="imagens/home_art_desktop_poster.avif" autoplay loop muted></video>
+
+            <div class="content">
+                <video id="video_logo" src="imagens/home_logo_TheWarWithin_video.avif" poster="imagens/home_logo_TheWarWithin_poster.avif" autoplay loop muted></video>
+
+                <h3>A Saga da Alma do Mundo™ começa agora</h3>
+                <h2>A escuridão chama<br>em 26 de agosto</h2>
+            </div>            
+        </div>
+
+        <img id="border_div_1" src="imagens/border_div_1.avif" alt="border" >
+
+        <div class="container overview">
+            <img id="logo_WSS" src="imagens/overview_logo_WSS.avif" alt="Logo World of Warcraft Saga Souls">
+            <h3>Uma nova aventura incrível há 20 anos em desenvolvimento</h3>
+
+            <div id="overview_logo">
+                <img src="imagens/overview_wow_logo1.avif" alt="Logo World of Warcraft The War Within™">
+                <img src="imagens/overview_wow_logo2.avif" alt="Logo World of Warcraft Midnight">
+                <img src="imagens/overview_wow_logo3.avif" alt="Logo World of Warcraft The Last Titan">
+            </div>
+
+            <div id="div_modal">
+                <div class="conteudo_modal">
+                    <p id="p_fechar"><span>&times;</span></p>
+                    <img id="logo_modal" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="video_container">
+                <img class="thumbnail" id="thumbnail_1" src="imagens/thumbnail_cinematic.avif" alt="Thumbnail Cinematic">
+
+                <img class="botao_play" id="botao_play_1" src="imagens/icon_play.png" alt="Botão Play">
+
+                <iframe class="youtube_video" id="youtube_video_1" src="" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+            </div> <!--allow="autoplay; encrypted-media"-->
+        </div>
+
+        <img id="border_div_3" src="imagens/border_div_3.avif" alt="border" >
+
+        <div class="container story">
+            <img id="story" src="imagens/overview_wow_logo1.avif" alt="Logo World of Warcraft The War Within™" aspect-ratio="4:3">
+            <div class="story_text">
+                <h3>Neste capítulo da Saga da Alma do Mundo™</h3>
+                <h2>Defenda Azeroth das sombras das profundezas</h2>
+                <p>Aventure-se por mundos subterrâneos nunca vistos cheios de maravilhas secretas e perigos à espreita, até chegar às profundezas do império nerubiano, onde o terrível Emissário do Caos está reunindo forças aracnídeas para devastar Azeroth.</p>
+            </div>
+            <div class="video_container">
+                <img class="thumbnail" id="thumbnail_2" src="imagens/thumbnail_story.jpeg" alt="Thumbnail Características Gerais" onclick="funIniciaVideo2()">
+
+                <img class="botao_play" id="botao_play_2" src="imagens/icon_play.png" alt="Botão Play">
+                
+                <iframe class="youtube_video" id="youtube_video_2" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        <div class="container world">
+            <div class="world_text">
+                <h3 id="world">Viaje a Khaz Algar</h3>
+                <h2>Explore o mundo sob Azeroth</h2>
+                <p>Sob a superfície de Azeroth, há um mundo gigantesco, repleto de perigos e esperando para ser explorado</p>
+            </div>
+
+            <div id="world_menu">
+                <button id="bt_dorn" type="button">Ilha de dorn</button>
+                <button id="bt_deeps" type="button">Fosso Ressonante</button>
+                <button id="bt_fall" type="button">Catedral do Abismo</button>
+                <button id="bt_kahet" type="button">AZJ-KAHET</button>
+            </div>
+
+            <div id="dorn" class="world_slide active">
+                <img class="background_mobile" src="imagens/background_01_IsleOfDorn_sm.avif" alt="ILHA DE DORN">
+                <img class="background_desktop" src="imagens/background_01_IsleOfDorn.avif" alt="ILHA DE DORN">
+                <p class="world_slide_texto">Descubra as terras de Khaz Algar, o lar dos Terranos, na costa ocidental de Pandária. Sua capital, Dornogal, será o novo ponto de encontro para a Horda e a Aliança.</p>
+            </div>
+
+            <div id="deeps" class="world_slide disabled">
+                <img class="background_mobile" src="imagens/background_02_RingingDeeps_sm.avif" alt="FOSSO RESSONANTE">
+                <img class="background_desktop" src="imagens/background_02_RingingDeeps.avif" alt="FOSSO RESSONANTE">
+                <p class="world_slide_texto">Esta enorme caverna é o lar dos Mensageiros da Máquina, terranos que cuidam das gigantescas máquinas titânicas de antigamente.</p>
+            </div>
+
+            <div id="fall" class="world_slide disabled">
+                <img class="background_mobile" src="imagens/background_03_Hallowfall_sm.avif" alt="CATEDRAL DO ABISMO">
+                <img class="background_desktop" src="imagens/background_03_Hallowfall.avif" alt="CATEDRAL DO ABISMO">
+                <p class="world_slide_texto">Iluminada por um grande cristal no centro, está área subterrânea luminosa abriga os Arathi, que travam uma batalha contínua contra os nerubianos.</p>
+            </div>
+
+            <div id="kahet" class="world_slide disabled">
+                <img class="background_mobile" src="imagens/background_04_Azj-Kahet_sm.avif" alt="AZJ-KAHET">
+                <img class="background_desktop" src="imagens/background_04_Azj-Kahet.avif" alt="AZJ-KAHET">
+                <p class="world_slide_texto">O pináculo da sociedade nerubiana, onde Xal'atath, o Emissário do Caos, está reunindo e transformando as forças nerubianas para criar um exército implacável.</p>
+            </div>
+        </div>
+
+        <div class="container features">
+            <h2 id="features">Novos Recursos Evergreen</h2>
+
+            <div id="features_menu">
+                <button id="bt_delves" type="button">GROTÕES</button>
+                <button id="bt_warbands" type="button">BANDOS DE GUERRA</button>
+                <button id="bt_talents" type="button">TALENTOS DE HERÓI</button>
+                <button id="bt_earthen" type="button">TERRANO</button>
+                <button id="bt_flying" type="button">DRAGONARIA</button>
+                <button id="bt_dungeons" type="button">MASMORRAS E RAIDES</button>
+            </div>
+
+            <div class="features_slides">
+                <div id="delves" class="slide_container active">
+                    <div class="image_container">
+                        <img src="imagens/features_01_Delves.avif" alt="GROTÕES">
+                    </div>
+                    <div class="features_slides_texto">
+                        <h3>Um novo pilar de fim de jogo</h3>
+                        <h2>GROTÕES</h2>
+                        <p>Abaixo da superfície, há câmeras de tesouros esperando para serem descobertas. Explore essas instâncias do mundo solo ou com até quatro amigos, além de um companheiro PNJ, para derrotar chefes e obter saques épicos de alto nível!</p>
+                    </div>
+                </div>
+    
+                <div id="warbands" class="slide_container disabled">
+                    <div class="image_container">
+                        <img src="imagens/features_02_Warbands.webp" alt="BANDOS DE GUERRA Feature">
+                    </div>
+                    <div class="features_slides_texto">
+                        <h3>Novo sistema de personagens alternativos da conta</h3>
+                        <h2>BANDOS DE GUERRA</h2>
+                        <p>Aumente o potencial dos seus personagens alternativos com o progresso em toda a família de personagens da sua conta Battle.net, independentemente da facção. Compartilhe acesso ao Banco do Bando de Guerra, renome de War Within, conquistas, coleções e muito mais.</p>
+                    </div>   
+                </div>
+    
+                <div id="talents" class="slide_container disabled">
+                    <div class="image_container">
+                        <img src="imagens/features_03_HeroTalents.avif" alt="TALENTOS DE HERÓI Feature">
+                    </div>
+                    <div class="features_slides_texto">
+                        <h3>Novo recurso de classe</h3>
+                        <h2>TALENTOS DE HERÓI</h2>
+                        <p>Fique ainda mais forte com as novas árvores de talentos de herói! Cada especialização de classe tem duas opções de árvores de talento de herói inspiradas em arquétipos clássicos do     universo Warcraft.</p>
+                    </div>
+                </div>
+    
+                <div id="earthen" class="slide_container disabled">
+                    <div class="image_container">
+                        <img src="imagens/features_04_TheEarthen.avif" alt="TERRANO Feature">
+                    </div>
+                    <div class="features_slides_texto">
+                        <h3>Nova Raça Aliada jogável</h3>
+                        <h2>TERRANO</h2>
+                        <p>Alie-se a uma raça feita na Forja Titânica com pedra viva imbuída com a alma do mundo de Azeroth! Desbloqueie personagens terranos após concluir suas missões e a campanha geral para subir de nível.</p>
+                    </div>
+                </div>
+    
+                <div id="flying" class="slide_container disabled">
+                    <div class="image_container">
+                        <img src="imagens/features_05_DynamicFlying.avif" alt="TERRANO Feature">
+                    </div>
+                    <div class="features_slides_texto">
+                        <h3>Cavalgue com estilo</h3>
+                        <h2>DRAGONARIA</h2>
+                        <p>Explore as novas áreas deslumbrantes de Khaz Algar com centenas de montarias no jogo, agora com capacidades de voo dinâmicas apresentadas em Dragonflight.</p>
+                    </div>
+                </div>
+    
+                <div id="dungeons" class="slide_container disabled">
+                    <div class="image_container">
+                        <img src="imagens/features_06_DungeonsandRaids.avif" alt="MASMORRAS E RAIDES Feature">
+                    </div>
+                    <div class="features_slides_texto">
+                        <h3>Desvende os planos sinistros de Xal'atath</h3>
+                        <h2>MASMORRAS E RAIDES</h2>
+                        <p>Oito Masmorras novas e um Raide desafiador que reúne defensores da Aliança e da Horda para enfrentar uma nova ameaça que está se formando no coração do mundo.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+<!--
+        <!-<img src="imagens/border_div_1.avif" alt="border" id="border-div-1">-->
+    </main>
+<!--
+    <footer>
+        <img src="imagens/blizz_blue_logo.png" alt="https://blizzard.com">
+        <p>©2024 Blizzard Entertainment, Inc.</p>
+        <p>Todas as <span>marcas registradas</span> mencionadas são de propriedade de seus respectivos donos.</p>
+    </footer>
+-->
+</body>
+</html>
